@@ -1,16 +1,38 @@
-# fl_donut_app_login
+# Dribbble FL
 
-A new Flutter project.
+This repository contains apps user interfaces inspired from dribbble and coded using Flutter.
 
-## Getting Started
+### Screenshots
 
-This project is a starting point for a Flutter application.
+<img src="https://github.com/leonardo-d3v/FlutterDonutAppLogin/blob/master/images/image01.png" width="300px" height="400px">
 
-A few resources to get you started if this is your first Flutter project:
+### Getting Started & Installation
+---
+To run the sample apps, be sure you have all requirements for running a flutter project on your machine. Please follow instructions [here](https://flutter.dev/docs/get-started/install) if you have not configured your machine for flutter development.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+### Plugins on [pub.dev](https://pub.dev/)
+----
+| Plugin | Link |
+| ------ | ------ |
+| Flutter Icons | [flutter_icons](https://pub.dev/packages/flutter_icons) |
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+### Created & Maintained By
+----
+[Leonardo Lerasse](https://github.com/leonardo-d3v) | [Instagram](https://www.instagram.com/leo_nardo.dev/)
+### License
+----
+Copyright 2019 Leonardo Lerasse
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+**Free Software, Hell Yeah!**
