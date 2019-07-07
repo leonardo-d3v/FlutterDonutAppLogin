@@ -4,7 +4,7 @@ This repository contains apps user interfaces inspired from dribbble and coded u
 
 ### Screenshots
 
-<img src="https://github.com/leonardo-d3v/FlutterDonutAppLogin/blob/master/images/image01.png" style="width:auto;height:300px;" >
+<img src="https://github.com/leonardo-d3v/FlutterDonutAppLogin/blob/master/images/image01.png" style="height:50%;max-width:50%" >
 
 ### Getting Started & Installation
 ---
