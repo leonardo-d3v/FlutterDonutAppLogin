@@ -19,6 +19,11 @@ To run the sample apps, be sure you have all requirements for running a flutter 
 ### Created & Maintained By
 ----
 [Leonardo Lerasse](https://github.com/leonardo-d3v) | [Instagram](https://www.instagram.com/leo_nardo.dev/)
+
+### Credits
+Design Inspired from [Anastasia Marinicheva](https://dribbble.com/shots/6740286-Ice-Cream) on Dribbble
+
+Donuts image from [Sharon McCutcheon](https://www.pexels.com/photo/pile-of-doughnuts-1407346/) from Pexels
 ### License
 ----
 Copyright 2019 Leonardo Lerasse
