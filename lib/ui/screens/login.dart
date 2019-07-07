@@ -1,7 +1,6 @@
 import 'package:fl_donut_app_login/ui/widgets/ui_elements/animated_fab.dart';
 import 'package:fl_donut_app_login/values/constants.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_icons/flutter_icons.dart';
 
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key key}) : super(key: key);

@@ -10,11 +10,11 @@ This repository contains apps user interfaces inspired from dribbble and coded u
 ---
 To run the sample apps, be sure you have all requirements for running a flutter project on your machine. Please follow instructions [here](https://flutter.dev/docs/get-started/install) if you have not configured your machine for flutter development.
 
-### Plugins on [pub.dev](https://pub.dev/)
+<!--### Plugins on [pub.dev](https://pub.dev/)
 ----
 | Plugin | Link |
 | ------ | ------ |
-| Flutter Icons | [flutter_icons](https://pub.dev/packages/flutter_icons) |
+| Flutter Icons | [flutter_icons](https://pub.dev/packages/flutter_icons) |-->
 
 ### Created & Maintained By
 ----
