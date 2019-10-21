@@ -1,0 +1,16 @@
+{
+    "ios":{
+        "api_id":"PROD_API_ID_IOS",
+        "api_password":"PROD_API_PASSWORD_IOS"
+    },
+    "android":{
+        "api_id":"PROD_API_ID_ANDOIRD",
+        "api_password":"PROD_API_PASSWORD_ANDROID"
+    },
+    "common":{
+        "cvs_api_id":"cvs_api_id_prod",
+        "cvs_api_password":"cvs_password_prod",
+        "core_url": "http://qa.wigroup.co:8080/SERVER_URL_PROD",
+        "cvs_url": "CVS_URL"
+    }
+}

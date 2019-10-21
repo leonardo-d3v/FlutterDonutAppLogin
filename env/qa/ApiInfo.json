@@ -8,9 +8,9 @@
         "api_password":"QA_API_PASSWORD_ANDROID"
     },
     "common":{
-        "cvs_api_id":"rcs_deals",
-        "cvs_api_password":"pugbn0zoyl",
-        "core_url": "http://qa.wigroup.co:8080/SERVER_URL",
+        "cvs_api_id":"cvs_api_id_qa",
+        "cvs_api_password":"cvs_password_qa",
+        "core_url": "http://qa.wigroup.co:8080/SERVER_URL_QA",
         "cvs_url": "CVS_URL"
     }
 }
