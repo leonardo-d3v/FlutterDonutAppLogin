@@ -1,0 +1,15 @@
+{
+    "android": {
+      "versionCode": 1,
+      "versionName": "1.0.1",
+      "applicationId": "com.example"
+    },
+    "ios": {
+      "version": "1.0.0",
+      "buildNumber": "1.0.0",
+      "appId": "com.example"
+    },
+    "common": {
+      "appName": "VMA"
+    }
+  }
