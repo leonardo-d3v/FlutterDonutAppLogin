@@ -21,6 +21,9 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+def configFile = file('../../android_config.json')
+def config = new groovy.json.JsonSlurper().parseText(configFile.text)
+
 apply plugin: 'com.android.application'
 apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
 
@@ -33,11 +36,12 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.example.fl_donut_app_login"
+        applicationId config.applicationId
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode flutterVersionCode.toInteger()
-        versionName flutterVersionName
+        versionCode config.versionCode
+        versionName config.versionName
+        resValue "string", "app_name", config.appName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
 
