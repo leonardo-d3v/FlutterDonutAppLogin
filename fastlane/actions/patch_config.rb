@@ -14,10 +14,26 @@ module Fastlane
         options         = params[:options]
         env             = options[:env]
         platform        = options[:platform]
+
+        # Display beautiful text in console
         puts "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
         puts "➡️ PATCHING: #{env.upcase}"
         puts "➡️ PLATFORM: #{platform.upcase}"
         puts "🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥"
+
+        # check if has access to directory, else ask for password
+        if options[:currentDir] != nil
+          Dir.chdir(options[:currentDir])
+        end
+        puts Dir.pwd()
+
+        # read the config file
+        configs_path    = "env/#{env}/Config.json"
+        configs_file    = File.read(configs_path)
+        configs         = JSON.parse(configs_file)
+
+        # move the config file in root project for android and ios projects
+        File.write("config.json",JSON.pretty_generate(configs))
 
       end
 
