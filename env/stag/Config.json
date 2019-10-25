@@ -2,14 +2,14 @@
     "android": {
       "versionCode": 1,
       "versionName": "1.0.1",
-      "applicationId": "com.qa"
+      "applicationId": "com.stag"
     },
     "ios": {
       "version": "1.0.0",
       "buildNumber": "1.0.0",
-      "appId": "com.qa"
+      "appId": "com.stag"
     },
     "common": {
-      "appName": "VMA"
+      "appName": "S VMA"
     }
   }
