@@ -32,9 +32,29 @@ module Fastlane
         configs_file    = File.read(configs_path)
         configs         = JSON.parse(configs_file)
 
-        # move the config file in root project for android and ios projects
-        File.write("config.json",JSON.pretty_generate(configs))
+        #android config for gradle build settings in app/build.gradle
+        if platform == 'android'
+           android_config = {
+             "versionCode" => configs[platform]["versionCode"],
+             "versionName" => configs[platform]["versionName"],
+             "applicationId" => configs[platform]["applicationId"],
+             "appName" => configs["common"]["appName"]
+           }
+           puts android_config
+           File.write("android_config.json",JSON.pretty_generate(android_config))
+        end
 
+        #config.xconfig for xcode build settings
+        if platform == 'ios'
+          xconfig         = ""
+          xconfig         += "VERSION = #{configs[platform]["version"]}\n"
+          xconfig         += "BUILDNUMBER = #{configs[platform]["buildNumber"]}\n"
+          xconfig         += "APPID = #{configs[platform]["appId"]}\n"
+          xconfig         += "APPNAME = #{configs["common"]["appName"]}\n"
+          puts xconfig
+          File.write("config.xcconfig",xconfig)
+        end
+       
       end
 
       def self.available_options
