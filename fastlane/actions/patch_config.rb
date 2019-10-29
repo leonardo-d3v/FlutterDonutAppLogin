@@ -56,6 +56,8 @@ module Fastlane
           puts xconfig
           File.write("config.xcconfig",xconfig)
         end
+
+        puts "✅ PATCHING COMPLETED ✅"
        
       end
 
@@ -64,20 +66,27 @@ module Fastlane
         options         = params[:options]
         env             = options[:env]
         platform        = options[:platform]
-
-        puts "Copy assets"
+       
         configs_path    = "env/#{env}"
+
+          #============================================#
+         #==FILES TO BE COPIED MUST BE PLACED BELOW ==#
+        #============================================#
         #ios specific asset
         if platform == 'ios'
+          puts "➡️ COPPYING: #{platform.upcase} ASSETS"
           # copying google services configs
           FileUtils.cp_r("#{configs_path}/GoogleService-Info.plist","ios/GoogleService-Info.plist")
-   
+    
           #android specific asset
         elsif platform == 'android'
+          puts "➡️ COPPYING: #{platform.upcase} ASSETS"
           # google-services.json saved in endpoint since it contains all targets
           FileUtils.cp_r("#{configs_path}/google-services.json","android/app/google-services.json")    
         end
-       
+
+        puts "✅ COPYING ASSETS COMPLETED ✅"
+
       end
       #end region copy assets
 
