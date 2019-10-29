@@ -1,3 +1,4 @@
 lane :patch do |options|
+  #USAGE :run : fastlane patch env:{qa/stag/prod} platform:{android/ios} i.e fastlane patch env:qa platform:android
   patch_config(options:options)
 end

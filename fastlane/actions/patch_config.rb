@@ -8,6 +8,8 @@ module Fastlane
       def self.run(params)
         # fastlane will take care of reading in the parameter and fetching the environment variable:
         patchConfigs(params)
+        # copy assets like images/google-services files to appropriate folders
+        copyAssets(params)
       end
 
       def self.patchConfigs(params)
@@ -56,6 +58,28 @@ module Fastlane
         end
        
       end
+
+      #region copy assets
+      def self.copyAssets(params)
+        options         = params[:options]
+        env             = options[:env]
+        platform        = options[:platform]
+
+        puts "Copy assets"
+        configs_path    = "env/#{env}"
+        #ios specific asset
+        if platform == 'ios'
+          # copying google services configs
+          FileUtils.cp_r("#{configs_path}/GoogleService-Info.plist","ios/GoogleService-Info.plist")
+   
+          #android specific asset
+        elsif platform == 'android'
+          # google-services.json saved in endpoint since it contains all targets
+          FileUtils.cp_r("#{configs_path}/google-services.json","android/app/google-services.json")    
+        end
+       
+      end
+      #end region copy assets
 
       def self.available_options
         # Define all options your action supports. 
