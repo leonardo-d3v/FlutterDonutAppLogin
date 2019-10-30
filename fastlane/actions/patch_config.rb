@@ -49,6 +49,7 @@ module Fastlane
         #config.xconfig for xcode build settings
         if platform == 'ios'
           xconfig         = ""
+          xconfig         += "#include \"./ios/Flutter/Generated.xcconfig\"\n" #addional settings for flutter is in this directory
           xconfig         += "VERSION = #{configs[platform]["version"]}\n"
           xconfig         += "BUILDNUMBER = #{configs[platform]["buildNumber"]}\n"
           xconfig         += "APPID = #{configs[platform]["appId"]}\n"
